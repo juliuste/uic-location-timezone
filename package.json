@@ -1,0 +1,52 @@
+{
+	"name": "uic-location-timezone",
+	"description": "Get timezone information for a given UIC location code.",
+	"version": "0.0.0",
+	"keywords": [
+		"uic",
+		"code",
+		"codes",
+		"railway",
+		"train",
+		"asia",
+		"europe",
+		"timezone",
+		"location",
+		"station"
+	],
+	"author": "Julius Tens <mail@juliustens.eu>",
+	"homepage": "https://github.com/juliuste/uic-location-timezone",
+	"repository": "juliuste/uic-location-timezone",
+	"bugs": "https://github.com/juliuste/uic-location-timezone/issues",
+	"main": "lib/index.js",
+	"files": [
+		"lib/*"
+	],
+	"dependencies": {
+		"country-tz": "^1.0.0",
+		"i18n-iso-countries": "^3.7.8",
+		"is-uic-location-code": "0.0.1",
+		"uic-codes": "^0.3.0"
+	},
+	"devDependencies": {
+		"depcheck": "^0.6.11",
+		"eslint": "^5.8.0",
+		"eslint-config-standard": "^12.0.0",
+		"eslint-plugin-import": "^2.14.0",
+		"eslint-plugin-node": "^8.0.0",
+		"eslint-plugin-promise": "^4.0.1",
+		"eslint-plugin-standard": "^4.0.0",
+		"tape": "^4.9.1"
+	},
+	"scripts": {
+		"check-deps": "depcheck",
+		"lint": "eslint lib test.js",
+		"fix": "eslint --fix lib test.js",
+		"test": "npm run lint && npm run check-deps && node test",
+		"prepublishOnly": "npm test"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"license": "ISC"
+}
