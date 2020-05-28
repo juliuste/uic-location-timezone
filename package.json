@@ -24,7 +24,7 @@
 	],
 	"dependencies": {
 		"country-tz": "^1.0.0",
-		"i18n-iso-countries": "^3.7.8",
+		"i18n-iso-countries": "^6.0.0",
 		"is-uic-location-code": "0.0.1",
 		"uic-codes": "^0.3.0"
 	},
